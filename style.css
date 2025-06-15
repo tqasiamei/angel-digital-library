@@ -1,0 +1,240 @@
+body {
+
+  margin: 0;
+
+  font-family: 'Segoe UI', sans-serif;
+
+  background: linear-gradient(to bottom, #ffe3ec, #fcd5ce);
+
+  color: #5e4b56;
+
+  text-align: center;
+
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+
+}
+
+h1 {
+
+  font-size: 3em;
+
+  color: #ff85a1;
+
+}
+
+section {
+
+  padding: 60px 20px;
+
+}
+
+img {
+
+  border-radius: 10px;
+
+  margin: 10px;
+
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+.gallery {
+
+  display: flex;
+
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+
+}
+
+footer {
+
+  padding: 30px;
+
+  background: #ffccd5;
+
+  color: #7b4a4a;
+
+  font-weight: bold;
+
+}
+
+form {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 15px;
+
+  max-width: 400px;
+
+  margin: auto;
+
+}
+
+input, textarea {
+
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #ffaec9;
+
+  border-radius: 8px;
+
+  font-size: 1em;
+
+  background: #fff5f8;
+
+}
+
+button {
+
+  background-color: #ff85a1;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 20px;
+
+  border-radius: 8px;
+
+  font-size: 1em;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+
+}
+
+button:hover {
+
+  background-color: #ff5e89;
+
+}
+
+/* Animation */
+
+.fade-in {
+
+  opacity: 0;
+
+  transform: translateY(30px);
+
+  animation: fadeInUp 1s forwards;
+
+}
+
+.delay-1 { animation-delay: 0.5s; }
+
+.delay-2 { animation-delay: 1s; }
+
+.delay-3 { animation-delay: 1.5s; }
+
+.delay-4 { animation-delay: 2s; }
+
+@keyframes fadeInUp {
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+/* Floating Hearts */
+
+.floating-hearts::before,
+
+.floating-hearts::after {
+
+  content: "💗 💖 💞 💕 ❣️ 💘";
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  font-size: 1.5em;
+
+  width: 100%;
+
+  height: 100%;
+
+  animation: floatHearts 15s linear infinite;
+
+  pointer-events: none;
+
+  opacity: 0.5;
+
+}
+
+@keyframes floatHearts {
+
+  0% { transform: translateY(100%); }
+
+  100% { transform: translateY(-200%); }
+
+}
+.buy-button {
+
+  display: inline-block;
+
+  background-color: #ff85a1;
+
+  color: white;
+
+  padding: 12px 20px;
+
+  margin-top: 20px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: background-color 0.3s;
+
+}
+
+.buy-button:hover {
+
+  background-color: #ff5e89;
+
+}
+
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+  font-family: 'Poppins', sans-serif;
+
+  color: #333;
+
+  /* 🎨 Background image */
+
+  background-image: url('https://i.imgur.com/U8iEFqk.jpeg');
+
+  background-size: cover;         /* Fill the screen */
+
+  background-position: center;    /* Center the image */
+
+  background-repeat: no-repeat;   /* No repeating */
+
+}
